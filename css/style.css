@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+}
+.text{
+	background: #900;
+}
+.center{
+	margin: auto;
+	width: 960px;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+form{
+	float: right;
+}
+form h3{
+	display: block;
+	font-family:arial;
+	font-weight: light;
+	font-size: 24px;
+	color:#44a0dd;
+	font-weight: 300;
+	margin: 13px 0 2px 0
+}
+
+form div{
+	border: 1px solid #cccccc;
+	background: #f9f9f9;
+}
+
+header input {
+    float: left;
+    background: transparent;
+    border: none;
+    width: 99px;
+    height: 30px;
+    padding: 0 12px;
+    outline: none;
+}
+
+header span{
+    float: left;
+    width: 1px;
+    height: 16px;
+    background: #aeaeae;
+    margin-top: 7px;
+}
+
+header input[type=submit]{
+	width: 34px;
+	background: url('../images/bg-submit.png') center center no-repeat;
+}
+
+form a{
+	float: left;
+	color: #007dd1;
+	font-size: 12px;
+	font-family: arial;
+	padding-right: 7px;
+    margin-top: 2px
+}
+
+nav{
+	background: #004a8b;
+}
