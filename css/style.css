@@ -4,21 +4,41 @@ body{
 .text{
 	background: #900;
 }
+
+/**********
+image
+********/
+img{
+	display: block;
+}
+
+.logo{
+	float: left;
+	margin: 5px 0 19px 0;
+}
 .center{
 	margin: auto;
 	width: 960px;
 }
+
+/********
+clearfix
+********/
+
 .clearfix:after{
 	content: '';
 	clear: both;
 	display: block;
 }
+
 form{
 	float: right;
 }
+
 form h3{
 	display: block;
-	font-family:arial;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 	font-weight: light;
 	font-size: 24px;
 	color:#44a0dd;
@@ -30,6 +50,10 @@ form div{
 	border: 1px solid #cccccc;
 	background: #f9f9f9;
 }
+
+/*************
+header
+*************/
 
 header input {
     float: left;
@@ -58,11 +82,427 @@ form a{
 	float: left;
 	color: #007dd1;
 	font-size: 12px;
-	font-family: arial;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 	padding-right: 7px;
-    margin-top: 2px
+    margin-top: 2px;
 }
+
+/************
+nav tag
+**********/
 
 nav{
 	background: #004a8b;
+	border:1px solid #4074a2;
 }
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li{
+	float: left;
+	margin-right: 2px;
+}
+
+nav a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-family: arial;
+	height: 46px;
+    line-height: 46px;
+    padding: 0 13px;
+    font-size: 15px;
+}
+
+/************
+color
+************/
+
+nav .active{
+	background: #0072be;
+}
+
+/**********
+Hover
+*********/
+
+nav .active:hover{
+	color: white;
+	cursor: default;
+}
+
+
+nav a:hover{
+	color: yellow;
+}
+
+.btn:hover{
+	background-color: #00498a;
+	color: #fff;
+	background-image: url(../images/icon-view.png);
+    background-position: 162px center;
+    background-repeat: no-repeat; 
+    transition: 1s;
+}
+
+/***********
+Banner class
+**********/
+
+.banner{
+	 background-color: #007dd1;
+    border-top: 6px solid #004a8c;
+}
+
+.bleft{
+	float: left;
+	width: 560px;
+    overflow: hidden;
+}
+
+.bright{
+	float: left;
+	width: 400px;
+	height: 329px;
+	background: url(../images/bright-back.png);
+	padding: 40px 40px 0 40px;
+	box-sizing: border-box;
+}
+
+.bright h3{
+	margin: 0;
+	font-size: 34px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #fff;
+	line-height: 36px;
+} 
+.bright p {
+    margin: 15px 30px 19px 0;
+    color: #fff;
+    font-family: arial;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.btn{
+	display:inline-block;
+	text-decoration: none;
+    background-color: #fff;
+    color: #007dd1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 50px 0 15px;
+    height: 38px;
+    line-height: 38px;
+    background-image: url(../images/icon-hover.png);
+    background-position: 162px center;
+    background-repeat: no-repeat; 
+}
+
+/********
+About
+********/
+
+/***************
+About class left
+****************/
+
+.aleft{
+	float: left;
+	width: 560px
+}
+
+.aleft h3{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 42px;
+	font-weight: 300;
+	color: #007dd1;
+	margin: 36px 0 0 0px;
+}
+
+.aleft p{
+	font-family: arial;
+	font-size: 18px;
+	color: black;
+	line-height: 26px;
+	margin: 9px 70px 18px 0;
+}
+
+.btn1{
+	padding: 0 54px 0 18px;
+	background-color: #007dd1;
+	color: #fff;
+	background-position: 235px center;
+    background-repeat: no-repeat; 
+}
+
+.btn1:hover{
+	padding: 0 54px 0 18px;
+	background-color: #94cef5;
+	color: #007dd1;
+	background-position: 235px center;
+    background-repeat: no-repeat; 
+}
+
+/***************
+About class right
+****************/
+
+.tab{
+	float: left;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.tab ul{
+	margin: 0;
+    padding: 0
+}
+
+.tab li{
+	float: left;
+    list-style: none;
+    margin-right: 2px;
+}
+
+.tab a{
+	display: block;
+    color: black;
+    padding: 0 20px;
+    height: 47px;
+    line-height: 47px;
+    background: #fee9b6;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+/*about for left*/
+.tab-1{
+	background-color: #fdda85;
+    border: 1px solid #caae6a;
+    padding: 24px;
+    height: 170px;
+    overflow: auto;
+}
+
+.tab-1 ul{
+	margin: 0;
+	padding: 0;
+	height: 170px;
+    overflow: auto;
+}
+
+.tab-1 li{
+	padding-top: 15px;
+    list-style: none;
+}
+
+.tab-date{
+	float: left;
+    width: 65px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.tab-date strong{
+    display: block;
+    background-color: #9d0000;
+    color: white;
+    font-size: 32px;
+    height: 39px;
+    line-height: 39px;
+    font-family: arial;
+}
+
+.tab-date span{
+	display: block;
+    background-color: #3f0000;
+    color: white;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    font-family: arial;
+}
+
+.tab-details{
+	float: left;
+    width: 250px;
+    margin: -3px;
+}
+div{
+	display: block;
+}
+.tab-details h3{
+	font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #9d0000;
+    text-decoration: underline;
+    line-height: 17px;
+    margin: 0 0 0 0;
+}
+
+.tab-details p{
+	font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 2px 0 0 0;
+    line-height: 17px;
+}
+
+/*css seclogo class start*/
+
+.slogan{
+    margin-top: 35px;
+    background-color: rgb(242, 242, 242);
+    border-top: 2px solid rgb(217, 217, 217);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.slogan img{
+	margin: 40px 0;
+    float: left;
+}
+
+.slogan1{
+	float: left;
+    margin: 40px 0;
+}
+
+.slogan1 h3{
+	letter-spacing: -1px;
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #007dd1;
+    margin: -6px 0 0 24px;
+}
+
+.slogan1 strong{
+	color: #252525;
+}
+
+.slogan1 span{
+	font-weight: 600;
+    color: #004c90
+}
+
+.slogan1 p{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    width: 314px;
+    margin: 7px 0 0 24px;
+    line-height: 22px;
+}
+
+/**************
+footer nav
+**************/
+
+.fnav{
+	background: #b2b2b2;
+	border:none;
+}
+
+.fnav a{
+	text-decoration: underline;
+}
+
+.fnav a:hover{
+	color: #004c90;
+}
+
+/*footer*/
+footer .center > div:last-child {
+    margin-right: 0;
+}
+
+footer .center  > div {
+	float: left;
+    margin: 35px 60px 0 0;
+}
+
+footer .center strong{
+	display: block;
+    color: #007dd1;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer p{
+	font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 6px 0 0px 0;
+}
+
+footer div:first-child + div span{    
+	background: #fff url(../images/call.png) left center no-repeat;
+    display: block;
+    padding-left: 42px;
+    margin-bottom: 7px;
+    }
+
+footer div:first-child + div span:last-child {
+    background: #fff url(../images/mail.png) left center no-repeat;
+    }
+
+/*social*/
+footer .center > div:last-child > div {
+    float: left;
+    margin: 10px 10px 0 0;
+}
+
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+
+/*lfooter*/
+.lfooter .center{
+	border-top: 1px solid #cccccc;
+}
+
+.lfooter .fleft{
+	float: left;
+}
+
+.lfooter p{
+	float: left;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 14px 0 30px 0;
+}
+
+.lfooter p a{
+     color: #000;
+}
+
+.lfooter img {
+    float: left;
+    margin: 14px 0 0 6px;
+}
+
+.lfooter .tqid {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin: 16px 0 0 2px;
+}
+/*.fb-like{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}*/
